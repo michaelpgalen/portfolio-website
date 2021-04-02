@@ -1,0 +1,99 @@
+/*
+colors used: #261307 (off black), #effbff (white/blue), #54d7de (bright teal), #298c91 (shade teal), #1c6063 (shade 2 teal), #d48550 (browrange)
+Fonts used: Roboto - Regular 400, 400 italic, Bold 700, Black 900
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #261307;
+}
+h1, h2, h3, h4, h5 {
+  line-height: 1.4;
+}
+h1 {
+  font-size:2.75em;
+  font-weight:700;
+}
+h2 {
+  font-size:2.25em;
+  font-weight:700;
+}
+h3 {
+  font-size:1.75em;
+  font-weight:900
+}
+h4 {
+  font-size:1.5em;
+  font-weight:700;
+}
+h5 {
+  font-size:1.25em;
+  font-weight:700;
+}
+img {
+  width: 100%;
+}
+a {
+  color:#54d7de;
+  text-decoration:none; /*default no underline*/
+}
+a:visited {/*visited link*/
+  color:#54d7de;
+}
+a:hover {/*hovering link*/
+  color:#298c91;
+  text-decoration: underline; The /*underline link when hover*/
+}
+a:active {/*selectd link*/
+  color:#d48550;
+}
+a:focus {/*keyboard focused link*/
+  color:#298c91;
+  text-decoration: underline;
+}
+
+
+
+.button {
+  display: inline-block;
+  background-color: #298c91;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #1c6063; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:active {
+  background-color: #1c6063;
+  color: #ffffff;
+}
+.button.contact {
+  background-color: transparent;
+  color: #298c91;
+  text-transform: uppercase;
+  border: 2px solid #298c91;
+}
+.button.contact:hover {
+  background-color:#effbff;
+  color:#1c6063;
+  border: 2px solid #1c6063;
+}
+.button.contact:focus {
+  background-color:#effbff;
+  color: #1c6063;
+  border: 2px solid #1c6063;
+}
+.button.contact:active {
+  background-color:#1c6063;
+  color:#effbff;
+}
