@@ -2,7 +2,9 @@
 colors used: #261307 (off black), #effbff (white/blue), #54d7de (bright teal), #298c91 (shade teal), #1c6063 (shade 2 teal), #d48550 (browrange)
 Fonts used: Roboto - Regular 400, 400 italic, Bold 700, Black 900
 */
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -38,25 +40,27 @@ img {
   width: 100%;
 }
 a {
-  color:#54d7de;
+  color:#298c91;
   text-decoration:none; /*default no underline*/
 }
 a:visited {/*visited link*/
-  color:#54d7de;
+  color:#298c91;
 }
 a:hover {/*hovering link*/
-  color:#298c91;
-  text-decoration: underline; The /*underline link when hover*/
-}
-a:active {/*selectd link*/
-  color:#d48550;
+  color:#54d7de;
+  text-decoration: underline; /*underline link when hover*/
 }
 a:focus {/*keyboard focused link*/
-  color:#298c91;
+  color:#54d7de;
   text-decoration: underline;
 }
+a:active {/*selectd link*/
+  color:#1c6063;
+}
 
-
+.h2project {
+  color: #298c91;
+}
 
 .button {
   display: inline-block;
@@ -68,9 +72,19 @@ a:focus {/*keyboard focused link*/
   border-bottom: 2px solid #1c6063; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+.button:visited {/*visited button link*/
+  color: #ffffff;
+}
 .button:hover {
   opacity: 0.8;
   color: #ffffff;
+  background-color: #54d7de;
+  text-decoration: none;
+}
+.button:focus {
+  opacity: 0.8;
+  color: #ffffff;
+  background-color: #54d7de;
   text-decoration: none;
 }
 .button:active {
@@ -96,4 +110,62 @@ a:focus {/*keyboard focused link*/
 .button.contact:active {
   background-color:#1c6063;
   color:#effbff;
+}
+
+.social-icon {
+  display:block;
+  max-height: 40px;
+}
+
+/* Layout Styling */
+.container {
+  padding: 15px;
+  }
+.row {
+  margin: 25px 0; /*25px top & bottom, 0px left and right*/
+  }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #1c6063;
+  }
+#hero h1 {
+  text-align: center;
+  }
+.logo {
+  max-width: 250px;
+  }
+header{
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #effbff;
+  padding: 10px 0;
+  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.65);
+}
+main {
+  padding-top: 100px;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #d48550;
+}
+#hero {
+  background-color: #effbff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
