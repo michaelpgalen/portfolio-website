@@ -20,6 +20,11 @@ h1 {
   font-size:2.75em;
   font-weight:700;
 }
+h1 span {
+  font-size: smaller;
+  font-weight: 400;
+  display: block;
+}
 h2 {
   font-size:2.25em;
   font-weight:700;
@@ -41,7 +46,8 @@ img {
 }
 a {
   color:#298c91;
-  text-decoration:none; /*default no underline*/
+  text-decoration:none;
+   /*default no underline*/
 }
 a:visited {/*visited link*/
   color:#298c91;
@@ -50,6 +56,53 @@ a:hover {/*hovering link*/
   color:#54d7de;
   text-decoration: underline; /*underline link when hover*/
 }
+/*open nav animation styles*/
+nav a
+{
+    /*text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;*/
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+nav a:hover {
+  color: #298c91;
+  text-decoration:none;
+}
+nav a:before, nav a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #298c91;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+nav a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+nav a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+nav a:hover:before, nav a:hover:after
+{
+    text-decoration: none;
+    color:#298c91;
+    opacity: 1;
+    transform: translateY(0px);
+}
+/*end nav animation styles*/
 a:focus {/*keyboard focused link*/
   color:#54d7de;
   text-decoration: underline;
@@ -70,16 +123,17 @@ a:active {/*selectd link*/
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #1c6063; /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
+  transition: 0.5s background-color;
+  }
+
 .button:visited {/*visited button link*/
   color: #ffffff;
 }
 .button:hover {
-  opacity: 0.8;
   color: #ffffff;
   background-color: #54d7de;
   text-decoration: none;
+  /*opacity: 0.8;*/
 }
 .button:focus {
   opacity: 0.8;
@@ -96,11 +150,11 @@ a:active {/*selectd link*/
   color: #298c91;
   text-transform: uppercase;
   border: 2px solid #298c91;
+  transition: 0.5s background-color color;
 }
 .button.contact:hover {
-  background-color:#effbff;
-  color:#1c6063;
-  border: 2px solid #1c6063;
+  background-color: #298c91;
+  color:#ffffff;
 }
 .button.contact:focus {
   background-color:#effbff;
@@ -115,6 +169,30 @@ a:active {/*selectd link*/
 .social-icon {
   display:block;
   max-height: 40px;
+}
+
+@keyframes color-change {
+  from {fill:#edc655;}
+  to {fill:#f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px, 50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
+
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* Layout Styling */
@@ -161,7 +239,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #d48550;
+  color: #298c91;
 }
 #hero {
   background-color: #effbff;
@@ -169,7 +247,6 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -184,17 +261,53 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+  nav > ul {
+    margin: 0;
+  }
   body {
     font-size: 18px;
   }
   #hero span {
     display: block;
   }
-}
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*=col-] {
+    float: left;
+    padding: 0px 10px;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  #work h3 {
+    margin: 4px 0 0 0;
+  }
+  #about-page h3 {
+    margin:0;
+  }
+  #about-page h2 {
+    text-align: center;
+  }
+
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
