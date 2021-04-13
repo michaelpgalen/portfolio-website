@@ -291,7 +291,9 @@ Medium devices (640px and larger)
   #about-page h2 {
     text-align: center;
   }
-
+  .max-width-400 {
+      max-width: 400px;
+    }
 
 /* ==============================
 Large devices (1024px or larger)
