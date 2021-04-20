@@ -93,43 +93,32 @@
                 <li>Apple Keynote</li>
               </ul>
             </div>
-          </div>
-          <!--close row-->
-        </div>
-        <!--Close Project Intro-->
-
-        <div class="row">
-          <!--open row for Executive Summary columns-->
+          </div><!--close row-->
+        </div>  <!--Close Project Intro-->
+        <div class="row"><!--open row for Executive Summary columns-->
           <h2 class="h2project">Executive Summary</h2>
-          <div class="">
-            <!--open column 1-->
+          <div class="col-md-6"><!--open column 1-->
             <h3>Context</h3>
             <p>Getting a tattoo is an incredibly personal experience. Getting “inked” is a big decision and a massive industry—people spend over 1.65 billion dollars annually on tattoos in the United States alone. A massive 36% of 18–25 year olds and
               40% of 26–40 year olds in the U.S. have at least one tattoo. Yet, a surprising 17% of tattoo owners feel some regret.</p>
             <h3>Goal</h3>
             <p>Design a responsive web app that reduces the chance of regret for tattooists.</p>
-          </div>
-          <!--close column 1-->
-          <div class="">
-            <!--open column 2-->
+          </div><!--close column 1-->
+          <div class="col-md-6"><!--open column 2-->
             <h3>Assumptions</h3>
             <ul>
               <li>Unanticipated levels of pain lead to regret. Thus, informing users how different body parts correlate with pain level will help tattooists make more confident decisions and reduce regret.</li>
               <li>Cultural/ancestral connected tattoos are timeless and unregrettable. Thus, helping tattooists design culturally/ancestrally significant tattoos will reduce regret.</li>
             </ul>
-            <h3>Summary of Learnings</h3>
-            <ul>
-              <li><strong>Assumption Invalidated</strong> - Pain is not a significant variable in tattoo decisions or regret.</li>
-              <li><strong>Assumption Validated</strong> - Tattooists believe designs with cultural/ancestral significance will not be regretted.And, many users could benefit from an easier way to search cultural iconography and design.</li>
-              <li><strong>Discovery</strong> - Tattoos changing colors and/or not healing well is a common source of regret, and product features allowing users to predict color changes on their skin tone would have high utility.</li>
-            </ul>
-          </div>
-          <!--close column 2-->
-        </div>
-        <!--close row for executive summary-->
-
-        <div class="">
-          <!--open my process-->
+          </div><!--close column 2-->
+        </div><!--close row for executive summary-->
+        <h3>Summary of Learnings</h3>
+        <ul>
+          <li><strong>Assumption Invalidated</strong> - Pain is not a significant variable in tattoo decisions or regret.</li>
+          <li><strong>Assumption Validated</strong> - Tattooists believe designs with cultural/ancestral significance will not be regretted.And, many users could benefit from an easier way to search cultural iconography and design.</li>
+          <li><strong>Discovery</strong> - Tattoos changing colors and/or not healing well is a common source of regret, and product features allowing users to predict color changes on their skin tone would have high utility.</li>
+        </ul>
+        <div class=""><!--open my process-->
           <h3>My Process</h3>
           <picture>
             <source srcset="img/deep-ink/process-txt@1x.png" media="(max-width:767px)">
@@ -140,16 +129,23 @@
         <div class="">
           <h2 class="h2project">Discovery</h2>
         </div>
-        <div class="">
-          <!--open market research-->
-          <h3>Market Research</h3>
-          <h4>Competitor Analysis (UX & SWOT)</h4>
-          <picture>
+        <div class=""><!--open market research-->
+          <div class="row"><!--open row for 2 columns-->
+            <div class="col-md-6 col-lg-5"><!--open column 1-->
+              <h3>Market Research</h3>
+              <h4>Competitor Analysis (UX & SWOT)</h4>
+            </div>
+            <div class="col-md-6 col-lg-7 mgt-36"><!--open column 2-->
+              <picture>
             <source srcset="img/deep-ink/competitor-logos.png" media="(max-width:767px)">
             <img src="img/deep-ink/competitor-logos@2x.png" alt="Competitors">
           </picture>
+            </div>
+        </div>
           <h5>SWOT Analysis - Tattoodoo</h5>
-          <h6>Strengths</h6>
+          <div class="row"><!--open row for 2 columns-->
+            <div class="col-md-6">
+            <h6>Strengths</h6>
           <ul>
             <li>Huge following on social media.</li>
             <li>Ability to provide a aggregated booking and consultation platform for worldwide studios/artists.</li>
@@ -159,6 +155,8 @@
             <li>Some categories are inconsistent.</li>
             <li>Meaning and significance of tattoo designs is omitted.</li>
           </ul>
+        </div>
+        <div class="col-md-6">
           <h6>Opportunities</h6>
           <ul>
             <li>Focus on first timers and their emotional and thought process behind getting a tattoo.</li>
@@ -168,6 +166,8 @@
           <ul>
             <li>Trending new app InkHunter with a different objective: leveraging AR technology to enable people to ‘test’ out tattoos on their body on their own time.</li>
           </ul>
+        </div>
+      </div><!--close row-->
           <p>Having gained understanding for the current competition and related products, I turned my focus toward the users.</p>
         </div>
         <!--close Market Research-->
@@ -256,13 +256,19 @@
         <h2 class="h2project">Ideate</h2>
         <div class="">
           <!--open Ideate section-->
+          <div class="row"><!--open row for 2 columns-->
+            <div class="col-md-6 col-lg-5"><!--open column 1-->
           <h3>User Flows</h3>
           <p>Based on my personas and journey maps, I derived key user objectives and did task analysis on each one. Those analyses were then turned into user flows to map all the possible page interactions a visitor might have on the way to their
             goal.</p>
-          <picture>
+          </div>
+          <div class="col-md-6 col-lg-7 mgt-36">
+            <picture>
             <source srcset="img/deep-ink/user-flow1.png" media="(max-width:767px)">
             <img src="img/deep-ink/user-flow1@2x.png" alt="User Flow 1">
           </picture>
+        </div>
+      </div><!--close row-->
           <h3>Site Maps</h3>
           <p>I was now able to take these user flows and create an initial site map with a navigational structure appropriate for our users. I decided to use a strict hierarchy navigational structure, because the primary features don’t need to
             connect.</p>
@@ -272,37 +278,28 @@
               <p>To validate my site map’s structure and organization, I created an open card sort on OptimalWorkshop and recruited 5 participants.I used Optimal Workshop’s Similarity matrix to find patterns within this small data set.</p>
               <p><strong>Key learnings</strong> were applied to create site map version 2. Changes made based on the card sort are in RED.</p>
             </div><!--close column 1-->
-            <div class="col-md-6"><!--open column 2 img of Matrix-->
+            <div class="col-md-6 mgt-36"><!--open column 2 img of Matrix-->
               <picture>
                 <source srcset="img/deep-ink/card-sort-similarity-matrix.png" media="(max-width:767px)">
                 <img src="img/deep-ink/card-sort-similarity-matrix@2x.png" alt="Similarity Matrix">
               </picture>
-            </div>
-            <!--close column 2 img matrix-->
-          </div>
-          <!--close row for two columns-->
-          <div class="row">
-            <!--open row for 2 colums of sitemap images-->
-            <div class="">
-              <!--open column 1 sitemap 1-->
+            </div><!--close column 2 img matrix-->
+          </div><!--close row for two columns-->
+          <div class="row"><!--open row for 2 colums of sitemap images-->
+            <div class="col-md-6 col-lg-6">  <!--open column 1 sitemap 1-->
               <picture>
                 <source srcset="img/deep-ink/site-map-v2.png" media="(max-width:767px)">
                 <img src="img/deep-ink/site-map-v2@2x.png" alt="Site map version 1">
               </picture>
-            </div>
-            <!--close column 1 sitemap 1-->
-            <div class="">
-              <!--open column 2 sitemap 2-->
+            </div><!--close column 1 sitemap 1-->
+            <div class="col-md-6 col-lg-6"><!--open column 2 sitemap 2-->
               <picture>
                 <source srcset="img/deep-ink/site-map-v3.1.png" media="(max-width:767px)">
                 <img src="img/deep-ink/site-map-v3.1@2x.png" alt="Site map version 2">
               </picture>
-            </div>
-            <!--close column 2 sitemap 2-->
-          </div>
-          <!--close row for 2 columns sitemaps-->
-        </div>
-        <!--close ideate section-->
+            </div><!--close column 2 sitemap 2-->
+          </div><!--close row for 2 columns sitemaps-->
+        </div><!--close ideate section-->
         <div class="">
           <!--open design section-->
           <h2 class="h2project">Design
