@@ -41,6 +41,12 @@ h5 {
   font-size:1.25em;
   font-weight:700;
 }
+.txt-cntr {
+  text-align: center;
+}
+.background-light {
+  background-color: #effbff;
+}
 img {
   width: 100%;
 }
@@ -209,7 +215,7 @@ nav > ul > li > a {
   display: block;
   }
   .navtoggle.responsive nav {
-  padding: 24px 0 0;
+    padding: 24px 0 0;
     }
   .navtoggle.responsive li  {
   display: block;
@@ -346,6 +352,9 @@ Large devices (1024px or larger)
   }
   .col-lg-5 {
     width: 41.66%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
   }
   .container {
     max-width: 1200px;
