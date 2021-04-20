@@ -44,6 +44,10 @@ h4 {
   font-size: 1.5em;
   font-weight: 700;
 }
+h4 span {
+  display: block;
+  font-weight: 400;
+}
 
 h5 {
   font-size: 1.25em;
@@ -56,6 +60,9 @@ h5 {
 
 .background-light {
   background-color: #effbff;
+}
+.background-light2 {
+  background-color: Ivory;
 }
 
 img {
@@ -97,6 +104,7 @@ a:active {
 
 .h2project {
   color: #298c91;
+  text-align: center;
 }
 
 .button {
@@ -207,7 +215,9 @@ a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-/* Layout Styling */
+/* ===========
+Layout Styling
+============== */
 .container {
   padding: 15px;
 }
@@ -309,7 +319,12 @@ Medium devices (640px and larger)
   main {
     padding-top: 90px;
   }
-
+  .section-wrapper {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top:1em;
+    padding-bottom:1em;
+  }
   nav {
     width: auto;
     float: right;
@@ -335,6 +350,19 @@ Medium devices (640px and larger)
   body {
     font-size: 18px;
   }
+  .flex-container {
+    display: flex;
+  }
+  .flex-row {
+    justify-content: center;
+  }
+  .flex-wrap {
+    flex-wrap:wrap;
+  }
+  .flex-row > div {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   #hero span {
     display: block;
@@ -347,6 +375,12 @@ Medium devices (640px and larger)
   [class*=col-] {
     float: left;
     padding: 0px 10px;
+  }
+  .col-md-7 {
+    width:58.33%
+  }
+  .col-md-5 {
+    width:41.66%
   }
 
   .row::after {
@@ -440,7 +474,7 @@ Large devices (1024px or larger)
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1080px;
       margin-left: auto;
       margin-right: auto;
     }
