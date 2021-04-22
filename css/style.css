@@ -34,6 +34,11 @@ h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
+h2 span {
+  display: block;
+  font-size: smaller;
+  font-weight: 400;
+}
 
 h3 {
   font-size: 1.75em;
@@ -305,6 +310,9 @@ nav>ul>li>a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+.border-bottom {
+  border-bottom:4px dotted #298c91;
 }
 
 /* ==============================
