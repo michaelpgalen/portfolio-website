@@ -354,6 +354,18 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+  .navtoggle.responsive li:last-child {
+    display:none;
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    border-top: 0px;
+  }
+  .navtoggle.responsive nav {
+    padding: 0;
+    margin: 0;
+  }
 
   body {
     font-size: 18px;
