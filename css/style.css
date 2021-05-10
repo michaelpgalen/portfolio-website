@@ -1,5 +1,5 @@
 /*
-colors used: #261307 (off black), #effbff (white/blue), #54d7de (bright teal), #298c91 (shade teal), #1c6063 (shade 2 teal), #d48550 (browrange)
+colors used:(NEW #D9304F SALMON, #BF2A45 SHADE SALMON, #33292B BLACK SALMON, #fbfbfb near-white)#261307 (off black), #effbff (white/blue), #54d7de (bright teal), #298c91 (shade teal), #1c6063 (shade 2 teal), #d48550 (browrange)
 Fonts used: Roboto - Regular 400, 400 italic, Bold 700, Black 900
 */
 * {
@@ -7,12 +7,12 @@ Fonts used: Roboto - Regular 400, 400 italic, Bold 700, Black 900
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #261307;
+  color: #33292b;
 }
 
 h1, h2, h3, h4, h5 {
@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2.75rem;
+  font-weight: 900;
 }
 
 h1 span {
@@ -31,31 +31,43 @@ h1 span {
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.25rem;
   font-weight: 700;
 }
+
 h2 span {
-  display: block;
   font-size: smaller;
   font-weight: 400;
 }
 
+.h2project {
+  color: #D9304F;
+  text-align: center;
+  padding: 4rem 0;
+}
+
 h3 {
-  font-size: 1.75em;
-  font-weight: 900
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+h3 span {
+  display: block;
+  font-weight: 400;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
 }
+
 h4 span {
   display: block;
   font-weight: 400;
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -64,10 +76,11 @@ h5 {
 }
 
 .background-light {
-  background-color: #effbff;
+  background-color: #fbfbfb;
 }
+
 .background-light2 {
-  background-color: Ivory;
+  background-color: #d9304f;
 }
 
 img {
@@ -75,90 +88,81 @@ img {
 }
 
 a {
-  color: #298c91;
-  text-decoration: none;
-  /*default no underline*/
+  color: #d9304f;
+  font-weight: 700;
+  text-decoration: none;  /* default no underline */
 }
 
 a:visited {
-  /*visited link*/
-  color: #298c91;
+  /* visited link */
+  color: #d9304f;
 }
 
 a:hover {
-  /*hovering link*/
-  color: #54d7de;
-  text-decoration: underline;
-  /*underline link when hover*/
+  /* hovering link */
+  color: #d9304f;
+  text-decoration: underline;  /* underline link when hover */
 }
 
 a:focus {
-  /*keyboard focused link*/
-  color: #54d7de;
+  /* keyboard focused link */
+  color: #d9304f;
   text-decoration: underline;
 }
 
 a:active {
-  /*selectd link*/
-  color: #1c6063;
+  /* selectd link */
+  color: #bf2a45;
 }
 
 .logo {
   max-width: 150px;
 }
 
-.h2project {
-  color: #298c91;
-  text-align: center;
-}
-
 .button {
   display: inline-block;
-  background-color: #298c91;
-  color: #ffffff;
-  /* needed to override the default link color */
+  background-color: #d9304f;
+  color: #fff;  /* needed to override the default link color */
   font-weight: 700;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #1c6063;
-  /* width of the border, type, color */
-  transition: 0.5s background-color;
+  padding: 8px;
+  border-radius: 8px;
+  transition: padding 0.5s, background-color 0.5s;
 }
 
 .button:visited {
-  /*visited button link*/
-  color: #ffffff;
+  /* visited button link */
+  color: #fff;
 }
 
 .button:hover {
-  color: #ffffff;
-  background-color: #54d7de;
+  color: #fff;
+  background-color: #bf2a45;
   text-decoration: none;
-  /*opacity: 0.8;*/
+  padding: 10px;
 }
 
 .button:focus {
   opacity: 0.8;
-  color: #ffffff;
+  color: #fff;
   background-color: #54d7de;
   text-decoration: none;
 }
 
 .button:active {
-  background-color: #1c6063;
-  color: #ffffff;
+  background-color: #bf2a45;
+  color: #fff;
 }
 
-.button.contact {
+/* .button.contact {
   background-color: transparent;
-  color: #298c91;
+  color: #D9304F;
   text-transform: uppercase;
-  border: 2px solid #298c91;
+  border: 2px solid #D9304F;
   transition: 0.5s background-color color;
 }
 
 .button.contact:hover {
-  background-color: #298c91;
+  background-color: #D9304F;
   color: #ffffff;
 }
 
@@ -171,6 +175,35 @@ a:active {
 .button.contact:active {
   background-color: #1c6063;
   color: #effbff;
+} */
+#topBtn {
+  display: none;  /* Hidden by default */
+  position: fixed;  /* Fixed/sticky position */
+  bottom: 20px;  /* Place the button at the bottom of the page */
+  right: 30px;  /* Place the button 30px from the right */
+  z-index: 99;  /* Make sure it does not overlap */
+  border: none;  /* Remove borders */
+  outline: none;  /* Remove outline */
+  background-color: #d9304f;  /* Set a background color */
+  color: white;  /* Text color */
+  cursor: pointer;  /* Add a mouse pointer on hover */
+  padding: 15px;  /* Some padding */
+  border-radius: 10px;  /* Rounded corners */
+  font-size: 18px;  /* Increase font size */
+  font-weight: 700;
+}
+
+#topBtn:hover {
+  background-color: #bf2a45;  /* Add a darker background on hover */
+}
+
+.pill {
+  border-radius: 8px;
+  background-color: whitesmoke;
+  padding: 4px 12px;
+  margin-right: 1rem;
+  font-size: smaller;
+  display: inline;
 }
 
 .social-icon {
@@ -228,13 +261,12 @@ Layout Styling
 }
 
 .row {
-  margin: 25px 0;
-  /*25px top & bottom, 0px left and right*/
+  margin: 25px 0;  /* 25px top & bottom, 0px left and right */
 }
 
 #work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #1c6063;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #hero h1 {
@@ -249,33 +281,34 @@ header {
   display: inline-block;
   position: fixed;
   width: 100%;
-  background-color: #effbff;
+  background-color: white;
   padding: 10px 0 4px;
-  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.65);
+  box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.1);
 }
 
 main {
   padding-top: 40px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #298c91;
+  color: #D9304F;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -284,7 +317,7 @@ nav>ul>li>a {
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-right: 0px
+  padding-right: 0;
 }
 
 .navtoggle.responsive li {
@@ -298,7 +331,7 @@ nav>ul>li>a {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navtoggle.responsive li:last-child {
@@ -306,13 +339,18 @@ nav>ul>li>a {
 }
 
 #hero {
-  background-color: #effbff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
+
 .border-bottom {
-  border-bottom:4px dotted #298c91;
+  border-bottom: 4px solid #fbfbfb;
+}
+
+.line {
+  margin: 2rem 4.5rem;
+  border-bottom: 4px solid #fbfbfb;
 }
 
 /* ==============================
@@ -327,23 +365,22 @@ Medium devices (640px and larger)
   main {
     padding-top: 90px;
   }
+
   .section-wrapper {
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-top:1em;
-    padding-bottom:1em;
+    padding: 1rem 4rem;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -354,31 +391,37 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+
   .navtoggle.responsive li:last-child {
-    display:none;
+    display: none;
     padding: 0;
   }
 
   .navtoggle.responsive li {
-    border-top: 0px;
+    border-top: 0;
+    padding: 0;
   }
+
   .navtoggle.responsive nav {
     padding: 0;
-    margin: 0;
   }
 
   body {
     font-size: 18px;
   }
+
   .flex-container {
     display: flex;
   }
+
   .flex-row {
     justify-content: center;
   }
+
   .flex-wrap {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
+
   .flex-row > div {
     padding-left: 40px;
     padding-right: 40px;
@@ -394,13 +437,15 @@ Medium devices (640px and larger)
 
   [class*=col-] {
     float: left;
-    padding: 0px 10px;
+    padding: 0 10px;
   }
+
   .col-md-7 {
-    width:58.33%
+    width: 58.33%;
   }
+
   .col-md-5 {
-    width:41.66%
+    width: 41.66%;
   }
 
   .row::after {
@@ -410,7 +455,7 @@ Medium devices (640px and larger)
   }
 
   #work h3 {
-    margin: 4px 0 0 0;
+    margin: 4px 0 0;
   }
 
   #about-page h3 {
@@ -428,79 +473,86 @@ Medium devices (640px and larger)
   .logo {
     min-width: 641px;
   }
+
   .mgt-36 {
     margin-top: 36px;
   }
 
-  /*open nav animation styles*/
+  /* open nav animation styles */
   nav a {
-    /*text-decoration: none;
+    /* text-decoration: none;
       font: 20px Raleway;
       margin: 0px 10px;
-      padding: 10px 10px;*/
+      padding: 10px 10px; */
     position: relative;
     z-index: 0;
     cursor: pointer;
   }
 
   nav a:hover {
-    color: #298c91;
+    color: #d9304f;
     text-decoration: none;
   }
 
-  nav a:before, nav a:after {
+  nav a::before,
+  nav a::after {
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 2px;
-    background: #298c91;
+    background: #d9304f;
     content: "";
     opacity: 0;
     transition: all 0.3s;
   }
 
-  nav a:before {
-    top: 0px;
+  nav a::before {
+    top: 0;
     transform: translateY(10px);
   }
 
-  nav a:after {
-    bottom: 0px;
+  nav a::after {
+    bottom: 0;
     transform: translateY(-10px);
   }
 
-  nav a:hover:before, nav a:hover:after {
+  nav a:hover::before,
+  nav a:hover::after {
     text-decoration: none;
     color: #298c91;
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
+}
 
-  /*end nav animation styles*/
-  /* ==============================
+/* end nav animation styles */
+
+/* ==============================
 Large devices (1024px or larger)
 ================================= */
-  @media only screen and (min-width: 1024px) {
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
-
-    .col-lg-4 {
-      width: 33.33%;
-    }
-
-    .container {
-      max-width: 1080px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
   }
 
-  /* ==============================
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+
+}
