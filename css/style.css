@@ -41,7 +41,7 @@ h2 span {
 }
 
 .h2project {
-  color: #D9304F;
+  color: #d9304f;
   text-align: center;
   padding: 4rem 0;
 }
@@ -300,7 +300,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #D9304F;
+  color: #d9304f;
 }
 
 .navtoggle li:not(:last-child) {
@@ -553,6 +553,8 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
+
+/* @media only screen and (min-width: 1440px) {
 
 }
+*/
