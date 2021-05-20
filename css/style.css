@@ -43,7 +43,7 @@ h2 span {
 }
 
 .h2project {
-  color: #996F1C;
+  color: #996F1c;
   text-align: center;
   padding: 4rem 0;
 }
@@ -206,6 +206,12 @@ a:active {
   margin-right: 1rem;
   font-size: smaller;
   display: inline;
+}
+
+.code {
+  background-color: darkgrey;
+  color: #fbfbfb;
+  padding: 1rem;
 }
 
 .social-icon {
