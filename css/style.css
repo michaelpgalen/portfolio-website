@@ -218,7 +218,7 @@ a:active {
   display: block;
   max-height: 40px;
 }
-/*
+/* Berline svg animations
 @keyframes color-change {
   from {
     fill: #edc655;
@@ -266,7 +266,7 @@ a:active {
     transform: translate(0px, 0px);
   }
   to {
-    transform: translate(400px, 0px);
+    transform: translate(200px, 0px);
   }
 }
 
@@ -308,8 +308,8 @@ a:active {
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  transform-origin:29% 13%;
 }
-
 
 /* ===========
 Layout Styling
