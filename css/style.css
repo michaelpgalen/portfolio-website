@@ -218,7 +218,7 @@ a:active {
   display: block;
   max-height: 40px;
 }
-
+/*
 @keyframes color-change {
   from {
     fill: #edc655;
@@ -259,7 +259,57 @@ a:active {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}*/
+
+@keyframes _cloudsLeft_ {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(400px, 0px);
+  }
 }
+
+#_cloudsLeft_ {
+  animation-name: _cloudsLeft_;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes _cloudsRight_ {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-300px, 0px);
+  }
+}
+
+#_cloudsRight_ {
+  animation-name: _cloudsRight_;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes _sun_ {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#_sun_ {
+  animation-name: _sun_;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 
 /* ===========
 Layout Styling
