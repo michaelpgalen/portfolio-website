@@ -73,6 +73,10 @@ h5 {
   font-weight: 700;
 }
 
+.caption {
+  font-size: 0.75rem;
+}
+
 .txt-cntr {
   text-align: center;
 }
@@ -204,7 +208,7 @@ a:active {
   background-color: whitesmoke;
   padding: 4px 12px;
   margin-right: 1rem;
-  font-size: smaller;
+  font-size: 0.75rem;
   display: inline;
 }
 
@@ -216,51 +220,10 @@ a:active {
 
 .social-icon {
   display: block;
-  max-height: 40px;
-}
-/* Berline svg animations
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-
-  to {
-    fill: #f76414;
-  }
+  max-height: 2rem;
 }
 
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}*/
-
+/* Open Portland animations */
 @keyframes _cloudsLeft_ {
   from {
     transform: translate(0px, 0px);
@@ -310,6 +273,8 @@ a:active {
   animation-timing-function: linear;
   transform-origin:29% 13%;
 }
+
+/* close Portland animations */
 
 /* ===========
 Layout Styling
