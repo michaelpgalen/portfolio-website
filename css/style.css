@@ -376,6 +376,20 @@ nav > ul > li > a {
   border-bottom: 4px solid #fbfbfb;
 }
 
+.flex-container-sm {
+  display: flex;
+  margin: 4rem 0 0;
+}
+
+.flex-row-sm {
+  justify-content: center;
+}
+
+.flex-row-sm > div {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
